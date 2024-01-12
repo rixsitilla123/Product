@@ -1,0 +1,33 @@
+@mixin display ($items: start, $between: space-between) {
+    display: flex;
+    align-items: $items;
+    justify-content: $between;
+}
+
+@mixin textStyle ($color: #22343D, $f-family: "Poppins", $f-size: 16px, $f-weight: 400, $l-height: 28px) {
+    color: $color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: normal;
+    font-weight: $f-weight;
+    line-height: $l-height;
+}
+
+@mixin titleStyle ($color: #22343d, $f-family: "Poppins", $f-size: 40px, $f-weight: 700, $l-height: 60px) {
+    color: $color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: normal;
+    font-weight: $f-weight;
+    line-height: $l-height;
+}
+
+@mixin button($width: 175px, $padding: 15px 41px, $color: #173A56, $b-radius: 4px, $bg-color: #fff) {
+    @include textStyle ();
+    width: $width;
+    padding: $padding;
+    text-align: center;
+    border-radius: $b-radius;
+    color: $color;
+    background-color: $bg-color;
+}

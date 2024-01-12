@@ -1,0 +1,90 @@
+.service-section{
+    padding-bottom: 90px;
+    background-image: url(../../images/service-section-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.service__title-wrap{
+    width: 410px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.service__title{
+    @include titleStyle ($f-size: 32px, $l-height: normal);
+}
+
+.service__list{
+    @include display ();
+    margin-bottom: 35px;
+}
+
+.service__item{
+    width: 200px;
+    text-align: start;
+    transition: all 0.4s linear;
+    &:hover{
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #02897A;
+    }
+}
+
+.service__item-icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 16px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 19px;
+    background-color: #02897A;
+    box-shadow: 0 10px 20px -10px;
+}
+
+.service__item:nth-child(2) > .service__item-icon{
+    background-color: #4D8DFF;
+}
+
+.service__item:nth-child(3) > .service__item-icon{
+    background-color: #740A76;
+}
+
+.service__item:nth-child(4) > .service__item-icon{
+    background-color: #F03E3D;
+}
+
+.service__item-title-wrap{
+    margin-bottom: 13px;
+    width: 157px;
+}
+
+.service__item-title{
+    @include titleStyle ($f-size: 22px, $f-weight: 600, $l-height: normal);
+}
+
+.service__item:hover > .service__item-title-wrap > .service__item-title{
+    color: #fff;
+}   
+
+.service__item-text{
+    @include textStyle ($l-height: 26px);
+}
+
+.service__item:hover > .service__item-title-wrap > .service__item-text{
+    color: #fff;
+} 
+
+.service__btn-link{
+    margin: 0 auto;
+}
+
+.service__btn{
+    @include button ($bg-color: #02897A, $color: #fff, $f-weight: 700, $l-height: normal);
+    display: inline-block;
+}
+

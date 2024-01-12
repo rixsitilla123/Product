@@ -1,0 +1,35 @@
+.management-section{
+    padding: 150px 0;
+}
+
+.management{
+    @include display ($items: center);
+}
+
+.management__content{
+    width: 485px;
+    text-align: start;
+}
+
+.management__content-span{
+    @include textStyle ($f-size: 16px, $f-weight: 600, $l-height: normal);
+    margin-bottom: 8px;
+}
+
+.management__content-title{
+    @include titleStyle ($f-size: 32px, $l-height: normal);
+    margin-bottom: 131px;
+}
+
+.management__into{
+    margin-bottom: 25px;
+    gap: 12px;
+}
+
+.management__into-title{
+    @include textStyle ($font-size: 16px, $font-weight: 600, $l-height: 26px);
+} 
+
+.management__into-text{
+    @include textStyle ($font-size: 16px, $l-height: 26px);
+}
